@@ -19,15 +19,6 @@ class Feed extends Component {
         )
     }
 
-    componentDidUpdate(){
-        console.log(this.state.instagram_data);
-        this.createPipeline();
-    }
-
-    createPipeline(){
-        return 0;
-    }
-
     render(){
         const elements = this.state.instagram_data;
         return(
@@ -37,9 +28,9 @@ class Feed extends Component {
                 {
                     elements.map((value, index) => {
                         return (
-                        <div className="col-sm-2">
+                        <div className="col-sm-2" key={index}>
                         <div className="card center" style={{width: "18rem"}}>
-                        <img src={value.node.display_url} class="card-img-top" alt="..."/>
+                        <img src={value.node.display_url} className="card-img-top" alt="..."/>
                         <div className="card-body">
                             <p className="card-text">{value.node.edge_media_to_caption.edges[0].node.text}</p>
                         </div>
