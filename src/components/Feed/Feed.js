@@ -28,7 +28,7 @@ class Feed extends Component {
                 {
                     elements.map((value, index) => {
                         return (
-                        <div className="col-sm-2" key={index}>
+                        <div className="col-sm-auto" key={index}>
                         <div className="card center" style={{width: "18rem"}}>
                         <img src={value.node.display_url} className="card-img-top" alt="..."/>
                         <div className="card-body">

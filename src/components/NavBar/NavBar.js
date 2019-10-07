@@ -31,7 +31,7 @@ class NavBar extends Component{
         <div>
         <nav className="navbar navbar-light fixed-top bg-transparent navbar-expand-sm">
         <a className="navbar-brand">
-            <img className="logo" src={Logo} width={this.state.iconWidth}/>
+            <span><img className="logo" src={Logo} width={this.state.iconWidth}/></span>
         </a>
 
         <button className="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
